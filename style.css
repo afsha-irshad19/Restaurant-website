@@ -1,0 +1,362 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+body{
+    background-color: rgb(245, 245, 241);
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#heading{
+    color: rgb(249, 248, 253);
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    top: 0%;
+    width: 100%;
+    height: 80px;
+    background-color: crimson;
+    color: white;
+    text-decoration: none;
+    z-index: 1000;
+}
+.logo{
+    font-size: 22px;
+    display: inline;
+    color: black;
+}
+ul{
+    display: flex;
+}
+ul li {
+    list-style: none;
+}
+ul li a{
+    text-decoration: none;
+    margin-inline: 40px;
+    color: white;
+    font-size: 22px;
+}
+ul li a:hover{
+    color: blue;
+}
+.cart-icon{
+    font-size: 28px;
+    color: blue;
+}
+.main{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 144px;
+}
+.main-text{
+    margin-top: 60px;
+    margin: 120px;
+}
+.main h1{
+    font-size: 70px;
+}
+.main p{
+    font-size: 22px;
+    margin-top: 22px;
+}
+.main button{
+    margin-top: 20px;
+    width: 130px;
+    height: 40px;
+    font-size: 24px;
+    background-color: crimson;
+    border-radius: 3px;
+    color: #fff;
+}
+.main button:hover{
+    background-color: rgb(128, 8, 32);
+}
+.head{
+    text-align: center;
+    padding: 88px;
+}
+.foods{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.food-card{
+    width: 300px;
+    padding: 22px;
+    background-color: #fff;
+    border-radius: 11px;
+    text-align: center;
+    margin-top: 22px;
+    margin-inline: 22px;
+}
+.food-card:hover{
+    background-color:rgb(244, 120, 145) ;
+    cursor: pointer;
+    border: 3px solid black;
+}
+.food-card .one{
+    margin-top: 6px;
+    font-size: 22px;
+    font-weight: bold;
+}
+.food-card img{
+    width: 130px;
+    height: 120px;
+    border-radius: 50%;
+}
+.offer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.offer-card img{
+    width: 250px;
+    height: 200px;
+    margin-inline: 52px;
+    object-fit: cover;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.offer-card {
+    text-align: center;
+    background-color: white;
+
+}
+.offer-card p{
+    padding: 2px;
+    font-size: 22px;
+
+}
+.offer-card:hover{
+    background-color:rgb(244, 120, 145) ;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+.reviews{
+    display: flex;
+    justify-content:center ;
+    text-align: center;
+    width: 600px;
+    height: 270px;
+    position: relative;
+    overflow: hidden;
+    /* margin: auto;
+    /* margin-top: 10px; */
+   /* margin-bottom: 10px; */
+    margin: 100px auto 10px;
+    z-index: 999;
+}
+
+.review-card{
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    position: absolute;
+    overflow: hidden;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 1s ease;
+}
+.review-card .card{
+    width: 500px;
+    padding: 12px;
+    text-align: center;
+    border-radius:11px;
+    background-color: #fff;
+    box-shadow: 0px 3px 3px 3px rgb(228, 228, 228);
+}
+.review-card img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+
+}
+.footer{
+    display: flex;
+    justify-content:space-around;
+    flex-wrap: wrap;
+    padding: 30px;/*space inside an element or space btw elements's border and content*/
+    margin-top: 66px;/* space outside of the elements */
+    background-color: rgb(2, 3, 22);
+    color: white;
+    height: 250px;
+}
+.footer .text p{
+    margin-top: 20px;
+}
+.cardDetails{
+    width: 400px;
+    padding: 22px;
+    text-align: center;
+    background-color: crimson ;
+    color: #fff;
+    position: fixed;
+    left: 50%;
+    right: 50%;
+    transform: translate(-50%, 40%);
+    top: 5%;
+    border-radius: 8px;
+}
+.cardDetails img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+.cardDetails i{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    cursor: pointer;
+    padding: 11px;
+    background-color: rgb(143, 210, 246);
+    color: white;
+    font-size: 22px;
+    border-radius: 8px;
+}
+.container2 {
+	background-color: white;
+	padding: 20px;
+	border-radius: 8px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+	text-align: center;
+	width: 400px;
+    height: 330px;
+    justify-content: center;
+    align-items: center;
+    left: 50%;
+    right: 50%;
+    /* margin-left:38%;
+    margin-top: 10px; */
+    margin: 10px auto;
+    max-width: 90%;
+}
+
+h1 #review-heading{
+	font-size: 15px;
+	margin: 0;
+}
+
+.rating {
+	font-size: 20px;
+	margin: 10px 0;
+}
+
+.stars {
+	font-size: 30px;
+	margin: 10px 0;
+}
+
+.star {
+	cursor: pointer;
+	margin: 0 5px;
+}
+.one {
+	color: rgb(255, 0, 0);
+}
+.two {
+	color: rgb(255, 106, 0);
+}
+
+.three {
+	color: rgb(251, 255, 120);
+}
+
+.four {
+	color: rgb(168, 168, 12);
+}
+
+.five {
+	color: rgb(24, 159, 14);
+}
+textarea {
+	width: 90%;
+    max-width: 100%;
+	padding: 10px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+    box-sizing: border-box;
+}
+.submit{
+	background-color: #007BFF;
+	color: white;
+	padding: 10px 20px;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+    display: block;
+    margin: 20px auto;
+}
+ .submit:hover {
+	background-color: #0056b3;
+}
+
+.feed-reviews {
+	margin-top: 40px;
+	text-align: left;
+}
+.feed-review {
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	padding: 10px;
+	margin: 10px 0;
+}
+.feed-review p {
+	margin: 10px;
+}
+@media screen and (max-width:960px){
+    .main{
+        display: block;
+        text-align: center;
+    }
+    }
+    @media screen and (max-width:641px){
+        .reviews{
+            width: 90%;
+        }
+        .main h1{
+            font-size: 35px;
+        }
+        .main img{
+            width: 90%;
+        }
+        ul{
+            display: none;
+        }
+    }
+    @media screen and (max-width:500px){
+        .cardDetails{
+            width: 80%;
+        }
+    }
+    @media screen and (max-width:800px){
+        .feed-review{
+           justify-content: center;
+           align-items: center;
+        }
+        .container2{
+            width: 80%;
+            height: 200px;
+        }
+    }
+    @media only screen and (max-width: 600px) {
+        .container2 {
+            padding: 10px;
+        }
+    }
+    @media only screen and (max-width: 600px) {
+        .container2 {
+            padding: 10px;
+            max-width: 100%; 
+        }
+    }
+    @media screen and (max-width:740px) {
+        .footer{
+            height: 500px;
+        }
+    }
